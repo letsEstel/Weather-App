@@ -1,3 +1,2 @@
 // index.js
-console.log(greeting);
-
+console.log("Hi");
