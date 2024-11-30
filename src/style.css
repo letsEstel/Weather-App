@@ -1,0 +1,36 @@
+.condDiv {
+  background-color: chartreuse;
+  border: solid black;
+  border-radius: 7px;
+  padding: 7px;
+}
+.container {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  height: 100vh;
+}
+.show {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tempDiv {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21vw;
+}
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+.condDiv {
+  font-family: "Silkscreen", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.tempDiv {
+  font-family: "Silkscreen", serif;
+  font-weight: 100;
+  font-style: normal;
+}

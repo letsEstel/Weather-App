@@ -3,7 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form action="/">
+        <div>Location:</div>
+        <input type="text" class="inputPlace" name="inputPlace" />
+
+        <fieldset>
+          <legend>Unit:</legend>
+          <div>
+            <input
+              type="radio"
+              id="metric"
+              name="unit"
+              value="metric"
+              checked
+            />
+            <label for="metric">Metric</label>
+          </div>
+
+          <div>
+            <input type="radio" id="us" name="unit" value="us" />
+            <label for="us">US</label>
+          </div>
+
+          <div>
+            <input type="radio" id="uk" name="unit" value="uk" />
+            <label for="uk">UK</label>
+          </div>
+        </fieldset>
+        <button type="submit">GO!</button>
+      </form>
+      <div class="show"></div>
+    </div>
+  </body>
 </html>
