@@ -1,4 +1,5 @@
 .condDiv {
+  margin-top: 17px;
   background-color: chartreuse;
   border: solid black;
   border-radius: 7px;
@@ -10,11 +11,7 @@
   flex-direction: column;
   height: 100vh;
 }
-.show {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
+
 .tempDiv {
   flex-grow: 1;
   display: flex;
@@ -30,7 +27,37 @@
 }
 
 .tempDiv {
-  font-family: "Silkscreen", serif;
   font-weight: 100;
   font-style: normal;
+}
+
+.formDiv.show {
+  display: flex; /* or flex, depending on your layout needs */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 100%;
+  background-color: #f8fafc;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+  box-sizing: border-box;
+}
+
+.formDiv {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0%;
+}
+
+form {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+button {
+  font-size: large;
 }
