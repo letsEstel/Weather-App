@@ -7,11 +7,16 @@
   <script defer src="main.js"></script></head>
   <body>
     <div class="container">
-      <form action="/">
-        <div>Location:</div>
-        <input type="text" class="inputPlace" name="inputPlace" />
+      <div class="formDiv">
+        <form action="/">
+          <div>Location:</div>
+          <input
+            type="text"
+            class="inputPlace"
+            name="inputPlace"
+            placeholder="London"
+          />
 
-        <fieldset>
           <legend>Unit:</legend>
           <div>
             <input
@@ -33,10 +38,13 @@
             <input type="radio" id="uk" name="unit" value="uk" />
             <label for="uk">UK</label>
           </div>
-        </fieldset>
-        <button type="submit">GO!</button>
-      </form>
+          <button type="submit">GO!</button>
+        </form>
+      </div>
+      <div class="condDiv">Loading</div>
       <div class="show"></div>
+
+      <div class="displayCondition"></div>
     </div>
   </body>
 </html>
